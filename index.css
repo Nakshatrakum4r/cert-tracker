@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  min-height: 100vh;
+  color: white;
+}
+
+/* center container */
+.center-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* glass card */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  padding: 40px;
+  border-radius: 18px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* inputs */
+.input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 15px;
+}
+
+.input::placeholder {
+  color: #cbd5e1;
+}
+
+/* buttons */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-green {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-green:hover {
+  background: #16a34a;
+}
+
+.link {
+  color: #60a5fa;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+}

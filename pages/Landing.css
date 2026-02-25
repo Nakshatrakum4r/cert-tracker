@@ -1,0 +1,78 @@
+/* Full page gradient background */
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero card */
+.hero-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  animation: slideUp 0.8s ease;
+}
+
+/* Title */
+.hero-card h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.hero-card p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.start-btn {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  background: linear-gradient(45deg, #4facfe, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover glow effect */
+.start-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  background: linear-gradient(45deg, #00c6ff, #4facfe);
+}
+
+/* Fade animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

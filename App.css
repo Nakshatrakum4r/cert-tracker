@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  min-height: 100vh;
+  color: #cbd5e1;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+/* Utility classes */
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2642 50%, #0f1c34 100%);
+}
+
+.card {
+  background: rgba(26, 38, 66, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  max-width: 500px;
+  width: 90%;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effects */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 200, 255, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+.delay {
+  animation-delay: 0.2s;
+}
+
+/* Input focus effects */
+input:focus {
+  border-color: #00c6ff !important;
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Scrollbar styling - Dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a2642;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00d4ff, #0088ff);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Circular Dashboard Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 60px rgba(30, 144, 255, 0.4), inset 0 0 30px rgba(100, 200, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 80px rgba(30, 144, 255, 0.6), inset 0 0 40px rgba(100, 200, 255, 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-15px) translateX(5px);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
